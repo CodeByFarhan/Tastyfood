@@ -48,7 +48,18 @@
         flex-direction: column;
         gap: 35px;
     }
-    .footer-copyright{
+    .footer-farhan{
         text-align: center;
     }
 }
+.footer-Tasty {
+  width: 14rem; 
+  max-width: 100%;  
+  display: block;
+  display: inline-block; 
+  /* margin-bottom:-80px; */
+  margin-bottom: -25;      /* yeh hata do */
+  margin-top: -70px;     /* thoda upar laane ke liye */
+}
+
+

@@ -6,8 +6,8 @@ import { StoreContext } from '../../Context/StoreContext'
 
 const FoodDisplay = ({category}) => {
 
- const { food_list} = useContext(StoreContext);
-
+//  const { food_list} = useContext(StoreContext);
+const { food_list, url } = useContext(StoreContext);
 
   return (
     <div className='food-display' id='food-display'>
@@ -15,7 +15,7 @@ const FoodDisplay = ({category}) => {
       <div className='food-display-list'>
         {food_list.map((item)=>{
           if (category==="All" || category===item.category) {
-            return <FoodItem  image={item.image} name={item.name} desc={item.description} price={item.price} id={item._id}/>
+            return <FoodItem  image={url+ "/images/" + item.image} name={item.name} desc={item.description} price={item.price} id={item._id}/>
           }
         })}
       </div>

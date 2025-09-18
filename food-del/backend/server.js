@@ -1,5 +1,5 @@
 import express  from "express"
-import cors from 'cors'
+import cors from 'cors' // frontend and backend run on different ports, i enable CORS in backend:
 import { connectDB } from "./config/db.js"
 import userRouter from "./routes/userRoute.js"
 import foodRouter from "./routes/foodRoute.js"

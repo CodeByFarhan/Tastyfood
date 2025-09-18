@@ -18,7 +18,7 @@ const addFood = async (req, res) => {
 
     try {
         let image_filename = `${req.file.filename}`
-
+//i Creates a new instance of foodModel using the data from the request body
         const food = new foodModel({
             name: req.body.name,
             description: req.body.description,
