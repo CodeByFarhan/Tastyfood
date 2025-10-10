@@ -22,7 +22,7 @@ const Header = () => {
     <div className="header">
       {/* Background Video */}
       <video className="header-video" autoPlay loop muted playsInline>
-        <source  className='Video-size' src="/public/videos/header_bg.mp4" type="video/mp4" />
+        <source  className='Video-size' src="/Videos/header_bg.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
 
